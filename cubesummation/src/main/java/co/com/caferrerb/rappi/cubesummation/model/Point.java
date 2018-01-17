@@ -1,11 +1,9 @@
 package co.com.caferrerb.rappi.cubesummation.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 
 @Entity
-@NamedQuery(name="Point.queryByCoordinates",query="select p from Point p where p.x between :x1 and :x2 AND p.y between :y1 and :y2 AND p.z between :z1 and :z2")
+@NamedQuery(name="Point.queryByCoordinates",query="select p from Point p where p.x between :x1 and :x2 AND p.y between :y1 and :y2 AND p.z between :z1 and :z2 AND cube.id:=idCube" )
 public class Point {
 
     @Id
@@ -22,6 +20,11 @@ public class Point {
      * valor de la coordenada
      */
     private int w;
+
+
+    @ManyToOne
+    @JoinColumn
+    private Cube cube;
 
 
     public Point() {
@@ -67,5 +70,14 @@ public class Point {
 
     public void setW(int w) {
         this.w = w;
+    }
+
+
+    public Cube getCube() {
+        return cube;
+    }
+
+    public void setCube(Cube cube) {
+        this.cube = cube;
     }
 }

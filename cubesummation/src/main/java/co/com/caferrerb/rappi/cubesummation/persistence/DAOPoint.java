@@ -1,15 +1,25 @@
 package co.com.caferrerb.rappi.cubesummation.persistence;
 
 import co.com.caferrerb.rappi.cubesummation.model.Point;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.List;
 
+
+@Component
 public class DAOPoint {
 
+
+    @Autowired
     private EntityManager em;
 
+
+    public DAOPoint(EntityManager em) {
+        this.em = em;
+    }
 
     /**
      * Metodo para persistir un punto
@@ -30,8 +40,9 @@ public class DAOPoint {
      * @param z2
      * @return lista de puntos.
      */
-    public List<Point> consultarPuntos(int x1, int x2, int y1, int y2, int z1, int z2){
+    public List<Point> consultarPuntos(int idCubo,int x1, int x2, int y1, int y2, int z1, int z2){
         Query q=em.createNamedQuery("Point.queryByCoordinates");
+        q.setParameter("idCube",idCubo);
         q.setParameter("x1",x1);
         q.setParameter("y1",y1);
         q.setParameter("z1",z1);
