@@ -10,8 +10,8 @@ Este punto se resolvio de 2 formas distintas:
 
 **1. Algoritmicamente:**
 	El algoritmo se resolvio en hackerrank donde se pasaron todo los test. el desarrollo 	de este algoritmo lo puede encontrar en:
-
-[codigo/cubesummation.java](http://github.com)
+	La estrategia fue crear una tabla de cambios o updates y en los queries consultar los puntos que coicidia con los criterios de 	busqueda.
+[codigo/cubesummation.java](https://github.com/caferrerb/pruebatecnica/blob/master/codigo/cubesummation.java)
 
 **2. Usando una arquitectura de microservicio con spring**
 Para este desarrollo se crearon tres capas
