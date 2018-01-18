@@ -17,19 +17,20 @@ Este punto se resolvio de 2 formas distintas:
 Para este desarrollo se crearon tres capas
 
 
-* **persistencia** : compuesta por las entidades(Cubo y Punto) [model](http://github.com) y dos DAOS (uno para cada entidad) [DAOS](http://github.com). esta capa es la responsabe de abstraer las operaciones sobre el medio de persistencia.  
+* **persistencia** : compuesta por las entidades(Cubo y Punto) [model](https://github.com/caferrerb/pruebatecnica/tree/master/cubesummation/src/main/java/co/com/caferrerb/rappi/cubesummation/model) y dos DAOS (uno para cada entidad) [DAOS](https://github.com/caferrerb/pruebatecnica/tree/master/cubesummation/src/main/java/co/com/caferrerb/rappi/cubesummation/persistence). esta capa es la responsabe de abstraer las operaciones sobre el medio de persistencia.  
 
-* **Negocio:** Una clase de negocio con la logica de resolucion del problema. [Negocio](http://github.com)
+* **Negocio:** Una clase de negocio con la logica de resolucion del problema. [Negocio](https://github.com/caferrerb/pruebatecnica/tree/master/cubesummation/src/main/java/co/com/caferrerb/rappi/cubesummation/service)
 
-* **Servicios:** Un servicio Rest con las operaciones de UPDATE y QUERY tal como en el enunciado. [Servicio](http://github.com)
+* **Servicios:** Un servicio Rest con las operaciones de UPDATE y QUERY tal como en el enunciado. [Servicio](https://github.com/caferrerb/pruebatecnica/tree/master/cubesummation/src/main/java/co/com/caferrerb/rappi/cubesummation/service)
 
+* **Utilidades:** clases de utilidad. en este caso esta el DTO generico de respuesta de los ervicios REST. [utilidades](https://github.com/caferrerb/pruebatecnica/tree/master/cubesummation/src/main/java/co/com/caferrerb/rappi/cubesummation/util)
 Ademas se crearon **pruebas unitarias** que puede encontrar aqui: [pruebas unitarias](http://github.com)
 
 ---
 
 **CODE REFACTORING**
 
-El codigo refactorizado lo puede encontrar [aqui](http://github.com)
+El codigo refactorizado lo puede encontrar [aqui](https://github.com/caferrerb/pruebatecnica/blob/master/codigo/refactorizada.codigo.php)
 
 Para refactorizar este codigo se procedio a mejorar lo siguiente:
 
