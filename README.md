@@ -19,9 +19,9 @@ Para este desarrollo se crearon tres capas
 
 * **persistencia** : compuesta por las entidades(Cubo y Punto) [model](http://github.com) y dos DAOS (uno para cada entidad) [DAOS](http://github.com). esta capa es la responsabe de abstraer las operaciones sobre el medio de persistencia.  
 
-* **Negocio: ** Una clase de negocio con la logica de resolucion del problema. [Negocio](http://github.com)
+* **Negocio:** Una clase de negocio con la logica de resolucion del problema. [Negocio](http://github.com)
 
-* **Servicios: ** Un servicio Rest con las operaciones de UPDATE y QUERY tal como en el enunciado. [Servicio](http://github.com)
+* **Servicios:** Un servicio Rest con las operaciones de UPDATE y QUERY tal como en el enunciado. [Servicio](http://github.com)
 
 Ademas se crearon **pruebas unitarias** que puede encontrar aqui: [pruebas unitarias](http://github.com)
 
