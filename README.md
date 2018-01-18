@@ -1,3 +1,6 @@
+
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
 ## Prueba tecnica Rappi
 
 Esta entrega tambien la puede encontrar en [bitbucket](https://cferrer1490@bitbucket.org/cferrer1490/rappi.git)
