@@ -23,7 +23,7 @@ Para este desarrollo se crearon tres capas
 
 * **Servicios:* ** Un servicio Rest con las operaciones de UPDATE y QUERY tal como en el enunciado. [Servicio](http://github.com)
 
-Ademas se crearon **pruebas unitarias** que puede encontrar aqui: [pruebas unitarias]((http://github.com)
+Ademas se crearon **pruebas unitarias** que puede encontrar aqui: [pruebas unitarias](http://github.com)
 
 ---
 
